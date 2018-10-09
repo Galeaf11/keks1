@@ -4,8 +4,6 @@
 let popup = document.querySelector('.big-picture');
 let popupClose = document.querySelector('.big-picture__cancel');
 let overlay = document.querySelector('.big-picture');
-let aForPopup = document.querySelectorAll('.picture');
-let aForPopup2 = document.querySelector('.picture');
 let socialComments = document.querySelectorAll('.social__comment');
 
 let onPopupEscPress = function (evt) {
@@ -35,7 +33,7 @@ overlay.addEventListener('click', function (evt) {
 
 
 let getRender = function () {
-  alert(1);
+  let aForPopup = document.querySelectorAll('.picture');
   for (let i = 0; i < aForPopup.length; i++) {
     aForPopup[i].addEventListener('click', function (evt) {
       openPopup();
@@ -55,7 +53,6 @@ let getRender = function () {
     });
   }
 };
-setTimeout(getRender, 2000);
 
 // прячем лишние кнопки
 document.querySelector('.social__comments-loader').classList.add('visually-hidden');

@@ -75,6 +75,7 @@ let getPictures = function (pictureData) {
     element.querySelector('.picture__description').textContent = pictures[i].description;
     document.querySelector('.pictures').appendChild(element);
   }
+  getRender();
 };
 
 
